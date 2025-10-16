@@ -1,5 +1,5 @@
 #These are my notes for my study sessions
-left off on: 
+left off on: 2.3.5 Running Bochs
 
 What was I doing again?
 1. Put together loader.s which is your "OS" that loads "CAFEBABE" into eax
@@ -14,3 +14,7 @@ What was I doing again?
     copied kernel (kernel.elf) to boot folder
     created menu.lst for the bootloader to find the kernel in grub folder
     generated iso with genisoimage
+    Created the bochs config file bochsrc.txt
+    Tried and failed to set up bochs emulation
+    spent a couple hours trying to hack at it! Nothing was truly discovered.
+    Time to take a break and watch some lectures and tutorials before I come back.
