@@ -18,3 +18,11 @@ What was I doing again?
     Tried and failed to set up bochs emulation
     spent a couple hours trying to hack at it! Nothing was truly discovered.
     Time to take a break and watch some lectures and tutorials before I come back.
+    
+3. Okay, I wanted to try to fix any potential
+    looming issues with Ubuntu and Virtual box, so I booted up this repo on a Ubuntu machine. Now I'm going to reinitialize everything and see if it made  a difference. and.. It did!! I also switched to Qemu because I found out there was just a serious issue with bochs, not my iso file.
+    so now we build our qemu emulation by doing
+    qemu-img create -f qcow2 mydisk.img 10G
+    qemu-system-x86_64 -cdrom os.iso -boot d -m 512 -hda mydisk.img
+    in the window we switch to View > compatMonitor0 and then type info registers
+    you'll see that eax = cafebabe!
